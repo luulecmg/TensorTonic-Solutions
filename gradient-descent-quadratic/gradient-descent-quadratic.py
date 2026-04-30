@@ -1,0 +1,10 @@
+def gradient_descent_quadratic(a, b, c, x0, lr, steps):
+    """
+    Return final x after 'steps' iterations.
+    """
+    x = x0
+    for step in range(steps):
+        gradient_x = 2 * a * x + b
+
+        x = x - lr * gradient_x
+    return x
